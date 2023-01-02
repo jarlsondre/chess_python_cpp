@@ -55,7 +55,7 @@ void Board::movePiece(u_int8_t from_x, u_int8_t from_y, u_int8_t to_x, u_int8_t 
         "Trying to move a piece to another piece with the same color "); 
 
     // Move the piece 
+    if (to_piece != NULL) delete to_piece; 
     pieces[to_x + 8*to_y] = pieces[from_x + 8*from_y];
-    delete pieces[from_x + 8*from_y]; 
     pieces[from_x + 8*from_y] = NULL;
 }

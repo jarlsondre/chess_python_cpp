@@ -21,15 +21,11 @@ using namespace std;
 // In order to see the type name of a piece: 
 // typeid(p1).name(), given that p1 is a piece
 
-
-
-
-
 int main() {
     Board* board = new Board(); 
 
-    Piece* p1 = (board->getPiece(0, 0)); 
-    Piece* p2 = (board->getPiece(0, 1)); 
+    Piece* p1 = (board->getPiece(0, 1)); 
+    board->movePiece(0, 1, 0, 3); 
 
     vector<pair<int, int>> legal_moves = p1->getLegalMoves(); 
     for (pair<int, int> move : legal_moves) {
