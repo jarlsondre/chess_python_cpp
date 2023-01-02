@@ -224,10 +224,38 @@ optional
 string_view
 -
 
+/home/jarl/Documents/git/chess_cpp/src/board.cc
+pawn.h
+/home/jarl/Documents/git/chess_cpp/src/pawn.h
+piece.h
+/home/jarl/Documents/git/chess_cpp/src/piece.h
+board.h
+/home/jarl/Documents/git/chess_cpp/src/board.h
+string
+-
+stdexcept
+-
+assert.h
+-
+
 /home/jarl/Documents/git/chess_cpp/src/board.h
 vector
 -
 string
+-
+
+/home/jarl/Documents/git/chess_cpp/src/pawn.cc
+pawn.h
+/home/jarl/Documents/git/chess_cpp/src/pawn.h
+piece.h
+/home/jarl/Documents/git/chess_cpp/src/piece.h
+iostream
+-
+string
+-
+assert.h
+-
+vector
 -
 
 /home/jarl/Documents/git/chess_cpp/src/pawn.h
@@ -246,7 +274,7 @@ vector
 board.h
 /home/jarl/Documents/git/chess_cpp/src/board.h
 
-/home/jarl/Documents/git/chess_cpp/src/tester.cc
+/home/jarl/Documents/git/chess_cpp/src/wrapper.cc
 iostream
 -
 typeinfo

@@ -83,31 +83,31 @@ CMakeFiles/chess_module.dir/src/board.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/chess_module.dir/src/board.cc.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jarl/Documents/git/chess_cpp/src/board.cc -o CMakeFiles/chess_module.dir/src/board.cc.s
 
-CMakeFiles/chess_module.dir/src/tester.cc.o: CMakeFiles/chess_module.dir/flags.make
-CMakeFiles/chess_module.dir/src/tester.cc.o: ../src/tester.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jarl/Documents/git/chess_cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/chess_module.dir/src/tester.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/chess_module.dir/src/tester.cc.o -c /home/jarl/Documents/git/chess_cpp/src/tester.cc
+CMakeFiles/chess_module.dir/src/wrapper.cc.o: CMakeFiles/chess_module.dir/flags.make
+CMakeFiles/chess_module.dir/src/wrapper.cc.o: ../src/wrapper.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jarl/Documents/git/chess_cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/chess_module.dir/src/wrapper.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/chess_module.dir/src/wrapper.cc.o -c /home/jarl/Documents/git/chess_cpp/src/wrapper.cc
 
-CMakeFiles/chess_module.dir/src/tester.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/chess_module.dir/src/tester.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jarl/Documents/git/chess_cpp/src/tester.cc > CMakeFiles/chess_module.dir/src/tester.cc.i
+CMakeFiles/chess_module.dir/src/wrapper.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/chess_module.dir/src/wrapper.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jarl/Documents/git/chess_cpp/src/wrapper.cc > CMakeFiles/chess_module.dir/src/wrapper.cc.i
 
-CMakeFiles/chess_module.dir/src/tester.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/chess_module.dir/src/tester.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jarl/Documents/git/chess_cpp/src/tester.cc -o CMakeFiles/chess_module.dir/src/tester.cc.s
+CMakeFiles/chess_module.dir/src/wrapper.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/chess_module.dir/src/wrapper.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jarl/Documents/git/chess_cpp/src/wrapper.cc -o CMakeFiles/chess_module.dir/src/wrapper.cc.s
 
 # Object files for target chess_module
 chess_module_OBJECTS = \
 "CMakeFiles/chess_module.dir/src/pawn.cc.o" \
 "CMakeFiles/chess_module.dir/src/board.cc.o" \
-"CMakeFiles/chess_module.dir/src/tester.cc.o"
+"CMakeFiles/chess_module.dir/src/wrapper.cc.o"
 
 # External object files for target chess_module
 chess_module_EXTERNAL_OBJECTS =
 
 chess_module.cpython-38-x86_64-linux-gnu.so: CMakeFiles/chess_module.dir/src/pawn.cc.o
 chess_module.cpython-38-x86_64-linux-gnu.so: CMakeFiles/chess_module.dir/src/board.cc.o
-chess_module.cpython-38-x86_64-linux-gnu.so: CMakeFiles/chess_module.dir/src/tester.cc.o
+chess_module.cpython-38-x86_64-linux-gnu.so: CMakeFiles/chess_module.dir/src/wrapper.cc.o
 chess_module.cpython-38-x86_64-linux-gnu.so: CMakeFiles/chess_module.dir/build.make
 chess_module.cpython-38-x86_64-linux-gnu.so: CMakeFiles/chess_module.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jarl/Documents/git/chess_cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX shared module chess_module.cpython-38-x86_64-linux-gnu.so"

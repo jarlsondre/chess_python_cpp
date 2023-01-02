@@ -6,7 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/jarl/Documents/git/chess_cpp/src/board.cc" "/home/jarl/Documents/git/chess_cpp/build/CMakeFiles/chess_module.dir/src/board.cc.o"
   "/home/jarl/Documents/git/chess_cpp/src/pawn.cc" "/home/jarl/Documents/git/chess_cpp/build/CMakeFiles/chess_module.dir/src/pawn.cc.o"
-  "/home/jarl/Documents/git/chess_cpp/src/tester.cc" "/home/jarl/Documents/git/chess_cpp/build/CMakeFiles/chess_module.dir/src/tester.cc.o"
+  "/home/jarl/Documents/git/chess_cpp/src/wrapper.cc" "/home/jarl/Documents/git/chess_cpp/build/CMakeFiles/chess_module.dir/src/wrapper.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

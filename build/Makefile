@@ -177,32 +177,32 @@ src/pawn.cc.s:
 	$(MAKE) -f CMakeFiles/chess_module.dir/build.make CMakeFiles/chess_module.dir/src/pawn.cc.s
 .PHONY : src/pawn.cc.s
 
-src/tester.o: src/tester.cc.o
+src/wrapper.o: src/wrapper.cc.o
 
-.PHONY : src/tester.o
+.PHONY : src/wrapper.o
 
 # target to build an object file
-src/tester.cc.o:
-	$(MAKE) -f CMakeFiles/chess_module.dir/build.make CMakeFiles/chess_module.dir/src/tester.cc.o
-.PHONY : src/tester.cc.o
+src/wrapper.cc.o:
+	$(MAKE) -f CMakeFiles/chess_module.dir/build.make CMakeFiles/chess_module.dir/src/wrapper.cc.o
+.PHONY : src/wrapper.cc.o
 
-src/tester.i: src/tester.cc.i
+src/wrapper.i: src/wrapper.cc.i
 
-.PHONY : src/tester.i
+.PHONY : src/wrapper.i
 
 # target to preprocess a source file
-src/tester.cc.i:
-	$(MAKE) -f CMakeFiles/chess_module.dir/build.make CMakeFiles/chess_module.dir/src/tester.cc.i
-.PHONY : src/tester.cc.i
+src/wrapper.cc.i:
+	$(MAKE) -f CMakeFiles/chess_module.dir/build.make CMakeFiles/chess_module.dir/src/wrapper.cc.i
+.PHONY : src/wrapper.cc.i
 
-src/tester.s: src/tester.cc.s
+src/wrapper.s: src/wrapper.cc.s
 
-.PHONY : src/tester.s
+.PHONY : src/wrapper.s
 
 # target to generate assembly for a file
-src/tester.cc.s:
-	$(MAKE) -f CMakeFiles/chess_module.dir/build.make CMakeFiles/chess_module.dir/src/tester.cc.s
-.PHONY : src/tester.cc.s
+src/wrapper.cc.s:
+	$(MAKE) -f CMakeFiles/chess_module.dir/build.make CMakeFiles/chess_module.dir/src/wrapper.cc.s
+.PHONY : src/wrapper.cc.s
 
 # Help Target
 help:
@@ -219,9 +219,9 @@ help:
 	@echo "... src/pawn.o"
 	@echo "... src/pawn.i"
 	@echo "... src/pawn.s"
-	@echo "... src/tester.o"
-	@echo "... src/tester.i"
-	@echo "... src/tester.s"
+	@echo "... src/wrapper.o"
+	@echo "... src/wrapper.i"
+	@echo "... src/wrapper.s"
 .PHONY : help
 
 
