@@ -8,4 +8,4 @@ I use pybind11 in this project in order to package the C++ stuff into a module t
 
 In order to build this into a module, enter the `build` folder and then type `cmake ..` and `make`. This will build a new .so-file, which then can be imported in Python. In the case of this project, it can be imported as `chess_module`, as seen in `main.py`.
 
-As you change methods in the C++ files, you have to add them to the actual Python module explicitly. This is currently done in the `tester.cc` file, but we'll see what I do with it in the future. Currently it seems to work, but I am far from done with my implementation.
+As you change methods in the C++ files, you have to add them to the actual Python module explicitly. This is currently done in the `wrapper.cc` file, but we'll see what I do with it in the future. Currently it seems to work, but I am far from done with my implementation.
