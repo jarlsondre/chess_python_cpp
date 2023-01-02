@@ -31,6 +31,8 @@ class Board {
     // which position, e.g. store a pointer to that piece so it is never 
     // actually deleted, but stored in that stack? 
 
+    // Maybe a stack of structs? 
+
    
 
 }; 

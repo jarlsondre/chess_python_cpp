@@ -52,18 +52,44 @@ std::vector<std::pair<int, int>> Pawn::getLegalMoves() {
     if (((cur_pos.second == 6 && direction == -1) || (cur_pos.second == 1 && direction == 1)) && 
         (this->board->getPiece(cur_pos.first, cur_pos.second + 2*direction) == NULL)) 
         {
-            legal_moves.push_back(
-                std::make_pair<int, int>((int) cur_pos.first, (int) cur_pos.second + 2*direction)
+            // idk how to format this in a nice way, hehe
+            legal_moves
+            .push_back(std::make_pair<int, int>(
+                (int) cur_pos.first, (int) cur_pos.second + 2*direction)
                 ); 
         }
     
 
-    // TODO: Check if capture can be done 
-
+    // Checking if a piece can be captured 
+    Piece* left_diag = NULL; 
+    Piece* right_diag = NULL; 
+    if (cur_pos.first - 1 >= 0)
+        Piece* left_diag = this->board->getPiece(cur_pos.first - 1, cur_pos.second + direction); 
+    if (cur_pos.first + 1 <= 7)
+        Piece* right_diag = this->board->getPiece(cur_pos.first + 1, cur_pos.second + direction); 
+    if (left_diag != NULL && left_diag->getColor() != this->getColor()) {
+        legal_moves.push_back(
+            std::make_pair<int, int>(
+                (int) cur_pos.first - 1, (int) cur_pos.second + direction
+            )
+        ); 
+    }
+    if (right_diag != NULL and right_diag->getColor() != this->getColor()) {
+        legal_moves.push_back(
+            std::make_pair<int, int>(
+                (int) cur_pos.first + 1, (int) cur_pos.second + direction
+            )
+        ); 
+    }
 
 
     // TODO: Check if you set your own king in check 
+    // maybe check all the legal moves up until now to see if any of them 
+    // put the king in check? Could potentially have a check at every place 
+    // moves are added to legal_moves 
 
+
+    // TODO: Check en passant 
 
 
 

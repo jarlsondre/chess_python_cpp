@@ -49,6 +49,7 @@ void Board::movePiece(u_int8_t from_x, u_int8_t from_y, u_int8_t to_x, u_int8_t 
 
     Piece* from_piece = pieces[from_x + 8*from_y]; 
     Piece* to_piece = pieces[to_x + 8*to_y]; 
+    
     assert (from_piece != NULL && "Trying to move a NULL piece"); 
     if (to_piece != NULL)
         assert (from_piece->getColor() != to_piece->getColor() && 
