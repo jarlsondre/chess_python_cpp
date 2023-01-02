@@ -23,15 +23,17 @@ using namespace std;
 
 int main() {
     Board* board = new Board(); 
+    Piece *temp, *p1, *p2, *p3;
 
-    Piece* p1 = (board->getPiece(0, 1)); 
-    board->movePiece(0, 1, 0, 3); 
 
-    vector<pair<int, int>> legal_moves = p1->getLegalMoves(); 
-    for (pair<int, int> move : legal_moves) {
-        cout << "(" << get<0>(move) << ", " << get<1>(move) << ") "; 
-    }
-    cout << endl; 
+    string init_state = board->getBoardString(); 
+    board->movePiece(0, 0, 4, 4); 
+
+    string new_state = board->getBoardString(); 
+
+    cout << init_state << endl; 
+    cout << new_state << endl; 
+
 
     return 0; 
 }

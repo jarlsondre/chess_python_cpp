@@ -25,6 +25,7 @@ CMakeFiles/chess_module.dir/src/wrapper.cc.o: ../pybind11/include/pybind11/gil.h
 CMakeFiles/chess_module.dir/src/wrapper.cc.o: ../pybind11/include/pybind11/options.h
 CMakeFiles/chess_module.dir/src/wrapper.cc.o: ../pybind11/include/pybind11/pybind11.h
 CMakeFiles/chess_module.dir/src/wrapper.cc.o: ../pybind11/include/pybind11/pytypes.h
+CMakeFiles/chess_module.dir/src/wrapper.cc.o: ../pybind11/include/pybind11/stl.h
 CMakeFiles/chess_module.dir/src/wrapper.cc.o: ../src/board.h
 CMakeFiles/chess_module.dir/src/wrapper.cc.o: ../src/pawn.h
 CMakeFiles/chess_module.dir/src/wrapper.cc.o: ../src/piece.h

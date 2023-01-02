@@ -7,7 +7,7 @@
 
 Board::Board() {
     // Filling up the first side with pawns 
-    for (int i = 0; i < 63; i++) {
+    for (int i = 0; i < 64; i++) {
         // Have to use new since we're using pointers
         // because when we don't use new, the object goes to 
         // stack, meaning that the pointer will point to the stack
@@ -28,7 +28,7 @@ Board::Board() {
             pawn = new Pawn('w'); 
             pawn->board = this; 
         }
-        pieces[i] = pawn; 
+        pieces.push_back(pawn); 
     }
 }
 
@@ -49,14 +49,38 @@ void Board::movePiece(u_int8_t from_x, u_int8_t from_y, u_int8_t to_x, u_int8_t 
 
     Piece* from_piece = pieces[from_x + 8*from_y]; 
     Piece* to_piece = pieces[to_x + 8*to_y]; 
-    
+
     assert (from_piece != NULL && "Trying to move a NULL piece"); 
     if (to_piece != NULL)
         assert (from_piece->getColor() != to_piece->getColor() && 
         "Trying to move a piece to another piece with the same color "); 
 
     // Move the piece 
-    if (to_piece != NULL) delete to_piece; 
     pieces[to_x + 8*to_y] = pieces[from_x + 8*from_y];
     pieces[from_x + 8*from_y] = NULL;
+}
+
+std::string Board::getBoardString() {
+    std::string result = "\n----------------------------------------"; 
+    for (int y = 0; y < 8; y++) {
+        result += "\n"; 
+        for (int x = 0; x < 8; x++) {
+            result += "|"; 
+            if (this->getPiece(x, y) == NULL) {
+                result += "    "; 
+                continue; 
+            }
+            // not NULL 
+            if (this->getPiece(x, y)->getColor() == 'w') {
+                result += " wP ";
+            }
+            else {
+                result += " bP ";
+            }
+        }
+        result += "|\n----------------------------------------"; 
+    }
+
+    return result; 
+
 }

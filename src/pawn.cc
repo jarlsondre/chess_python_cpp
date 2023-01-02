@@ -14,7 +14,6 @@ Pawn::Pawn(char color) : Piece(color) {
 std::vector<std::pair<int, int>> Pawn::getLegalMoves() {
     assert (this->board != NULL && "this.board is null"); 
     std::vector<std::pair<int, int>> legal_moves; 
-    legal_moves.push_back(std::make_pair<int, int>(-1, -1)); 
 
     // Finding current position on board
     std::pair<int, int> cur_pos = std::make_pair<int, int>(-1, -1); 
@@ -53,10 +52,9 @@ std::vector<std::pair<int, int>> Pawn::getLegalMoves() {
         (this->board->getPiece(cur_pos.first, cur_pos.second + 2*direction) == NULL)) 
         {
             // idk how to format this in a nice way, hehe
-            legal_moves
-            .push_back(std::make_pair<int, int>(
+            legal_moves.push_back(std::make_pair<int, int>(
                 (int) cur_pos.first, (int) cur_pos.second + 2*direction)
-                ); 
+            ); 
         }
     
 

@@ -13,6 +13,7 @@ using namespace std;
 // Code used to bind the C++ code to Python
 
 #include "pybind11/pybind11.h"
+#include "pybind11/stl.h"
 namespace py = pybind11; 
 PYBIND11_MODULE(chess_module, handle) {
     handle.doc() = "This is the module docs. Teehee"; 
@@ -20,7 +21,8 @@ PYBIND11_MODULE(chess_module, handle) {
     py::class_<Pawn>(handle, "PyPawn")
         .def(py::init<char>())
         .def("getNumMoves", &Pawn::getNumMoves)
-        .def("getColor", &Piece::getColor); 
+        .def("getColor", &Piece::getColor)
+        .def("getLegalMoves", &Piece::getLegalMoves); 
 
     py::class_<Piece>(handle, "PyPiece")
         .def("getColor", &Piece::getColor) 
@@ -28,6 +30,8 @@ PYBIND11_MODULE(chess_module, handle) {
 
     py::class_<Board>(handle, "PyBoard")
         .def(py::init<>())
-        .def("getPiece", &Board::getPiece); 
+        .def("getPiece", &Board::getPiece) 
+        .def("movePiece", &Board::movePiece) 
+        .def("getBoardString", &Board::getBoardString); 
 
 }

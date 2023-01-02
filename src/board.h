@@ -12,13 +12,14 @@ class Board {
     Make it possible to move them and interact in any way wanted 
     */ 
    private: 
-    // Creating a list of pointers to the different pieces 
-    Piece* pieces[64]; 
+    // Creating a vector of pointers to the different pieces 
+    std::vector<Piece*> pieces; 
 
    public: 
     Board(); 
     Piece* getPiece(u_int8_t x, u_int8_t y); 
     void movePiece(u_int8_t from_x, u_int8_t from_y, u_int8_t to_x, u_int8_t to_y); 
+    std::string getBoardString(); 
 
 
     // Idea: 
